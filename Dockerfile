@@ -8,7 +8,7 @@ FROM smebberson/alpine-base
 	# Create the authentication file for http access
 	# Getting SVNADMIN interface
 RUN apk add --no-cache apache2 apache2-utils apache2-webdav mod_dav_svn &&\
-	apk add --no-cache subversion==1.6.17 &&\
+	apk add --no-cache subversion &&\
 	apk add --no-cache wget unzip php7 php7-apache2 php7-session php7-json &&\
 	apk add --no-cache php7-xml &&\	
 	mkdir -p /run/apache2/ &&\
